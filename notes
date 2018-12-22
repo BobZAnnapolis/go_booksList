@@ -1,0 +1,30 @@
+NOTES
+
+no semi-colons
+formatting is strict & enforced by compiler
+
+programs start with "package" statement
+  - used as a way to group similar functionality, eg, crypto, fmt {formatting}, net {networking:
+
+all the standard packages can be viewed at https://golang.org/pkg
+3rd party & standard packages can be found at https://godoc.org/
+
+next line usually an "import" statement
+  - bring in stuff other people have written and stored in packages
+  - standard library or 3rd party stuff
+
+SHA1 checksums
+  - openssl sha1 fullPathToFile - compare to website - should ==
+
+ENVIRONMENT VARIABLES
+Go workspace
+  - ideally create 1 workspace location 
+  - init GOPATH to it and add :
+    - bin
+    - pkg
+    - src
+      - github.com
+        - <github.com user-name>
+          - folder with code for project / repo
+initialize GOPATH
+  - set environment variables in .bashrc or .bashprofile
